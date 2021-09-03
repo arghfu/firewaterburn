@@ -1,0 +1,97 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 61236E4A
+P 7300 3100
+AR Path="/61245DD9/61236E4A" Ref="J?"  Part="1" 
+AR Path="/61236E4A" Ref="J101"  Part="1" 
+F 0 "J101" H 7300 3300 50  0000 C CNN
+F 1 "AudioJack2_SwitchT" H 7332 3334 50  0001 C CNN
+F 2 "" H 7300 3100 50  0001 C CNN
+F 3 "~" H 7300 3100 50  0001 C CNN
+F 4 "CP-2523MJCT-ND" H 7300 3100 50  0001 C CNN "Digikey"
+	1    7300 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 612289FA
+P 6550 2750
+F 0 "R101" H 6620 2796 50  0000 L CNN
+F 1 "R" H 6620 2705 50  0000 L CNN
+F 2 "" V 6480 2750 50  0001 C CNN
+F 3 "~" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R102
+U 1 1 61229213
+P 6800 3000
+F 0 "R102" V 6593 3000 50  0000 C CNN
+F 1 "R" V 6684 3000 50  0000 C CNN
+F 2 "" V 6730 3000 50  0001 C CNN
+F 3 "~" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3000 6550 3000
+Wire Wire Line
+	6550 3000 6550 3100
+Wire Wire Line
+	6550 3100 7100 3100
+Wire Wire Line
+	7100 3000 7050 3000
+Wire Wire Line
+	7050 3000 6950 3000
+Wire Wire Line
+	7050 3000 7050 3200
+Connection ~ 7050 3000
+Wire Wire Line
+	7100 3200 7050 3200
+Connection ~ 7050 3200
+Wire Wire Line
+	7050 3200 7050 3350
+Wire Wire Line
+	6550 3000 6550 2900
+Connection ~ 6550 3000
+$Comp
+L power:GND #PWR0101
+U 1 1 612314F9
+P 7050 3350
+F 0 "#PWR0101" H 7050 3100 50  0001 C CNN
+F 1 "GND" H 7055 3177 50  0000 C CNN
+F 2 "" H 7050 3350 50  0001 C CNN
+F 3 "" H 7050 3350 50  0001 C CNN
+	1    7050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2600 6550 2500
+$Comp
+L power:+5V #PWR0102
+U 1 1 61233301
+P 6550 2500
+F 0 "#PWR0102" H 6550 2350 50  0001 C CNN
+F 1 "+5V" H 6565 2673 50  0000 C CNN
+F 2 "" H 6550 2500 50  0001 C CNN
+F 3 "" H 6550 2500 50  0001 C CNN
+	1    6550 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
