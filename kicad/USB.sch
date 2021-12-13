@@ -28,7 +28,7 @@ F 4 "A121523CT-ND" V 1600 5350 50  0001 C CNN "Digikey"
 	0    1    1    0   
 $EndComp
 $Comp
-L firewaterburn:SS8050-G Q?
+L z_ic:SS8050-G Q?
 U 1 1 612529F1
 P 2100 5350
 AR Path="/612529F1" Ref="Q?"  Part="1" 
@@ -42,7 +42,7 @@ F 4 "641-1790-1-ND" H 2100 5800 50  0001 C CNN "Digikey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L firewaterburn:SS8050-G Q?
+L z_ic:SS8050-G Q?
 U 1 1 612529F8
 P 2100 5950
 AR Path="/612529F8" Ref="Q?"  Part="1" 
@@ -106,7 +106,7 @@ D+
 Text Label 4950 2150 0    50   ~ 0
 D-
 $Comp
-L firewaterburn:USB_C_Plug_USB2.0 P?
+L z_connectors:USB_C_Plug_USB2.0 P?
 U 1 1 61252A19
 P 2050 2400
 AR Path="/61252A19" Ref="P?"  Part="1" 
@@ -587,7 +587,7 @@ Connection ~ 4200 5550
 Wire Wire Line
 	4200 5550 4200 5500
 $Comp
-L firewaterburn:SW_MEC_5G SW201
+L z_connectors:SW_MEC_5G SW201
 U 1 1 613453AA
 P 1300 6600
 F 0 "SW201" H 1300 6793 50  0000 C CNN
@@ -623,7 +623,7 @@ F 4 "1292-1393-1-ND" H 2500 7150 50  0001 C CNN "Digikey"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L firewaterburn:SW_MEC_5G SW202
+L z_connectors:SW_MEC_5G SW202
 U 1 1 61353461
 P 2500 6600
 F 0 "SW202" H 2500 6793 50  0000 C CNN

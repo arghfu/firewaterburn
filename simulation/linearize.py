@@ -191,12 +191,12 @@ def PlotOpvData(temp, Rt, linRange, B, Uref, Umax):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     U0 = 3.3  # V
-    Umax = 3
+    Umax = 3.3
 
-    temp, length, linRange = GenerateRange(0, 200, 60, 140)
-    Rt, B, coef = ModelingResistor(temp)+
+    temp, length, linRange = GenerateRange(0, 200, 70, 130)
+    Rt, B, coef = ModelingResistor(temp)
 
-    # PlotResistorData(temp, Rt, linRange, B)
+    PlotResistorData(temp, Rt, linRange, B)
 
     PlotOpvData(temp, Rt, linRange, B, U0, U0)
 

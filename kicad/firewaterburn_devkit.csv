@@ -1,0 +1,10 @@
+Reference, Quantity, Value, Footprint, Datasheet, Digikey
+D1 D2 ,2,"LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","475-1278-1-ND"
+J1 J2 ,2,"AudioJack2_SwitchT","z_connector:MJ-2523","~","CP-2523MJCT-ND"
+R1 R2 ,2,"130","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","RMCF0805JT130RCT-ND"
+R3 R5 R7 ,3,"2k49","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","","RR12P2.49KDCT-ND"
+R4 ,1,"3k24","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","P3.24KDACT-ND"
+R6 ,1,"4k02","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","RR12P4.02KDCT-ND"
+R8 ,1,"2k26","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","738-RMCF0805FT2K26CT-ND"
+U1 ,1,"ESP-WROOM-32","z_ic:esp-wroom-32-devkit",""
+U2 ,1,"LT6202","Package_TO_SOT_SMD:TSOT-23-5","~","LT6202CS5#TRMPBFCT-ND"
