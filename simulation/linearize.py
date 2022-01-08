@@ -193,11 +193,11 @@ if __name__ == '__main__':
     U0 = 3.3  # V
     Umax = 3.3
 
-    temp, length, linRange = GenerateRange(0, 200, 70, 130)
+    temp, length, linRange = GenerateRange(0, 200, 40, 140)
     Rt, B, coef = ModelingResistor(temp)
 
     PlotResistorData(temp, Rt, linRange, B)
 
-    PlotOpvData(temp, Rt, linRange, B, U0, U0)
+    # PlotOpvData(temp, Rt, linRange, B, U0, U0)
 
     plt.show()
