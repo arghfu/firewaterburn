@@ -1,26 +1,3 @@
-
-kicad/firewaterburn.bck
-
-kicad/firewaterburn-cache.lib
-
-kicad/firewaterburn.dcm
-
-kicad/firewaterburn.kicad_pcb-bak
-
-kicad/firewaterburn.sch-bak
-
-kicad/USB.sch-bak
-
-kicad/sym-lib-table
-
-kicad/fp-lib-table
-
-kicad/fp-info-cache
-
-kicad/firewaterburn_devkit-cache.lib
-
-kicad/firewaterburn_devkit.sch-bak
-
 kicad/linearize.log
 
 kicad/linearize.raw
@@ -28,3 +5,11 @@ kicad/linearize.raw
 kicad/linearize.txt
 
 simulation/.idea/
+
+*.zip
+*.kicad_sch-bak
+*.csv
+*.xml
+bom/
+
+kicad/fp-info-cache
