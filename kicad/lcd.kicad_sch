@@ -188,27 +188,27 @@
           (name "AUDIO_OUT" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 -6.35 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "11" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 -3.81 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "12" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 -1.27 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "13" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 1.27 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "14" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 3.81 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "15" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 33.02 -1.27 0) (length 2.54) hide
+        (pin no_connect line (at 35.56 6.35 180) (length 2.54) hide
           (name "" (effects (font (size 1.27 1.27))))
           (number "16" (effects (font (size 1.27 1.27))))
         )
@@ -263,6 +263,7 @@
       )
     )
   )
+
 
   (junction (at 143.51 48.26) (diameter 0) (color 0 0 0 0)
     (uuid 32b975d5-b27f-4f4a-a618-a1a24bca919c)
@@ -372,7 +373,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 47735aa1-34f3-4755-91cf-fff700080163)
   )
-  (hierarchical_label "~{INT}" (shape input) (at 95.25 81.28 180)
+  (hierarchical_label "~{INT}" (shape output) (at 95.25 81.28 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 5511eda6-c27b-4dc6-b7a9-ffcd3daa4b03)
   )
@@ -390,15 +391,15 @@
   )
 
   (symbol (lib_id "z_ic:MIKROE-2168") (at 137.16 74.93 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 3ff1b10e-c56c-4326-9504-00a01659d0fe)
-    (property "Reference" "J?" (id 0) (at 173.99 73.6599 0)
+    (property "Reference" "J7" (id 0) (at 151.13 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MIKROE-2168" (id 1) (at 173.99 76.1999 0)
+    (property "Value" "R61529 LCD" (id 1) (at 151.13 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "z_connector:FPC_BOTTOM_20POS_Würth_68712014522" (id 2) (at 122.555 69.215 0)
+    (property "Footprint" "z_connector:62684-402100ALF" (id 2) (at 122.555 69.215 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://download.mikroe.com/documents/datasheets/rvt43ulfnwc0x-rev.1.2.pdf" (id 3) (at 122.555 69.215 0)
@@ -432,7 +433,7 @@
   (symbol (lib_id "power:GND") (at 137.16 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4393ec1e-f89e-4b96-b240-20a6ced66e53)
-    (property "Reference" "#PWR?" (id 0) (at 137.16 115.57 0)
+    (property "Reference" "#PWR0154" (id 0) (at 137.16 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 137.16 114.3 0))
@@ -448,7 +449,7 @@
   (symbol (lib_id "power:+3V3") (at 137.16 31.75 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 58f680d1-7397-475e-bb66-1b0ec91db9b5)
-    (property "Reference" "#PWR?" (id 0) (at 137.16 35.56 0)
+    (property "Reference" "#PWR0158" (id 0) (at 137.16 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (id 1) (at 137.16 27.94 0))
@@ -464,7 +465,7 @@
   (symbol (lib_id "power:GND") (at 95.25 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d99ed60b-cdab-48bd-9fc1-4c8ca5844868)
-    (property "Reference" "#PWR?" (id 0) (at 95.25 99.06 0)
+    (property "Reference" "#PWR0140" (id 0) (at 95.25 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 95.25 97.79 0))
@@ -480,8 +481,8 @@
   (symbol (lib_id "Device:R") (at 137.16 39.37 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e38edb69-7e1d-40ce-8d9a-bb69c9e39e6d)
-    (property "Reference" "R?" (id 0) (at 134.62 39.37 90))
-    (property "Value" "R" (id 1) (at 139.7 39.37 90))
+    (property "Reference" "R42" (id 0) (at 134.62 39.37 90))
+    (property "Value" "0R" (id 1) (at 139.7 39.37 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 135.382 39.37 90)
       (effects (font (size 1.27 1.27)) hide)
     )
