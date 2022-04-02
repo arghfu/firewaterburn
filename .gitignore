@@ -1,0 +1,15 @@
+kicad/linearize.log
+
+kicad/linearize.raw
+
+kicad/linearize.txt
+
+simulation/.idea/
+
+*.zip
+*.kicad_sch-bak
+*.csv
+*.xml
+bom/
+
+kicad/fp-info-cache
