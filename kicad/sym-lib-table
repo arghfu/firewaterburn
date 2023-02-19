@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "mylib_connectors")(type "KiCad")(uri "C:/workspace/kicad-libs/symbols/mylib_connectors.kicad_sym")(options "")(descr ""))
+  (lib (name "mylib_ic")(type "KiCad")(uri "C:/workspace/kicad-libs/symbols/mylib_ic.kicad_sym")(options "")(descr ""))
+)
