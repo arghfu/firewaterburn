@@ -868,7 +868,6 @@
     )
   )
 
-
   (junction (at 138.43 38.1) (diameter 0) (color 0 0 0 0)
     (uuid 11b72d42-44c1-419f-98d4-ffc591a75f9f)
   )
@@ -1401,7 +1400,7 @@
   (symbol (lib_id "power:GND") (at 140.97 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0563348a-65d8-4296-a4f1-aabcf8381a3b)
-    (property "Reference" "#PWR0306" (at 140.97 134.62 0)
+    (property "Reference" "#PWR0313" (at 140.97 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 133.35 0)
@@ -1417,7 +1416,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0306") (unit 1)
+          (reference "#PWR0313") (unit 1)
         )
       )
     )
@@ -1426,7 +1425,7 @@
   (symbol (lib_id "power:GND") (at 204.47 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0704cc0e-c8a9-4c82-8899-83590c840377)
-    (property "Reference" "#PWR0311" (at 204.47 49.53 0)
+    (property "Reference" "#PWR0308" (at 204.47 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 48.26 0)
@@ -1442,7 +1441,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0311") (unit 1)
+          (reference "#PWR0308") (unit 1)
         )
       )
     )
@@ -1451,7 +1450,7 @@
   (symbol (lib_id "Device:C") (at 204.47 34.29 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1334ffd1-7e5c-43a9-bb08-2da59b23da52)
-    (property "Reference" "C305" (at 200.66 34.925 0)
+    (property "Reference" "C304" (at 200.66 34.925 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "9p" (at 200.66 32.385 0)
@@ -1471,7 +1470,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "C305") (unit 1)
+          (reference "C304") (unit 1)
         )
       )
     )
@@ -1480,7 +1479,7 @@
   (symbol (lib_id "Device:C") (at 208.28 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15a86c41-4cb2-4089-a761-44c4bf58649e)
-    (property "Reference" "C306" (at 212.09 69.215 0)
+    (property "Reference" "C307" (at 212.09 69.215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "300p" (at 212.09 71.755 0)
@@ -1500,7 +1499,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "C306") (unit 1)
+          (reference "C307") (unit 1)
         )
       )
     )
@@ -1509,7 +1508,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x05") (at 222.25 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 298bc1db-9653-4399-858a-ed1b8f02aa80)
-    (property "Reference" "J302" (at 224.79 57.1499 0)
+    (property "Reference" "J301" (at 224.79 57.1499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x05" (at 224.79 59.6899 0)
@@ -1532,7 +1531,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "J302") (unit 1)
+          (reference "J301") (unit 1)
         )
       )
     )
@@ -1602,7 +1601,7 @@
   (symbol (lib_id "Device:C") (at 217.17 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40cfd47d-22f0-4f00-9707-9279f127172d)
-    (property "Reference" "C307" (at 220.98 33.655 0)
+    (property "Reference" "C305" (at 220.98 33.655 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "9p" (at 220.98 36.195 0)
@@ -1622,7 +1621,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "C307") (unit 1)
+          (reference "C305") (unit 1)
         )
       )
     )
@@ -1631,7 +1630,7 @@
   (symbol (lib_id "mylib_connectors:TC-2050") (at 64.77 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4398cbaf-13a2-4a10-9104-288393bff3f6)
-    (property "Reference" "J301" (at 57.785 45.72 0)
+    (property "Reference" "J302" (at 57.785 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TC-2050" (at 53.975 78.105 0)
@@ -1656,7 +1655,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "J301") (unit 1)
+          (reference "J302") (unit 1)
         )
       )
     )
@@ -1665,7 +1664,7 @@
   (symbol (lib_id "power:+5V") (at 143.51 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53509573-13b1-408f-87df-1aaa153cf555)
-    (property "Reference" "#PWR0307" (at 143.51 35.56 0)
+    (property "Reference" "#PWR0304" (at 143.51 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 143.51 26.67 0)
@@ -1681,7 +1680,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0307") (unit 1)
+          (reference "#PWR0304") (unit 1)
         )
       )
     )
@@ -1690,7 +1689,7 @@
   (symbol (lib_id "power:GND") (at 208.28 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6e1408db-4ec4-4776-9ef0-7f8a3b3bf646)
-    (property "Reference" "#PWR0312" (at 208.28 85.09 0)
+    (property "Reference" "#PWR0311" (at 208.28 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.28 83.82 0)
@@ -1706,7 +1705,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0312") (unit 1)
+          (reference "#PWR0311") (unit 1)
         )
       )
     )
@@ -1779,7 +1778,7 @@
   (symbol (lib_id "power:+3V3") (at 64.77 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 751a5311-2e17-4b5e-a355-75bde0bf5bb5)
-    (property "Reference" "#PWR0302" (at 64.77 41.91 0)
+    (property "Reference" "#PWR0307" (at 64.77 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 64.77 33.02 0)
@@ -1795,7 +1794,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0302") (unit 1)
+          (reference "#PWR0307") (unit 1)
         )
       )
     )
@@ -1804,7 +1803,7 @@
   (symbol (lib_id "power:GND") (at 220.98 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81b934f8-68e5-473b-a28d-b041a594c68b)
-    (property "Reference" "#PWR0314" (at 220.98 156.21 0)
+    (property "Reference" "#PWR0315" (at 220.98 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 220.98 154.94 0)
@@ -1820,7 +1819,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0314") (unit 1)
+          (reference "#PWR0315") (unit 1)
         )
       )
     )
@@ -1982,7 +1981,7 @@
   (symbol (lib_id "power:+5V") (at 172.72 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e3df4a0-f964-46df-991d-17967c3c70de)
-    (property "Reference" "#PWR0308" (at 172.72 24.13 0)
+    (property "Reference" "#PWR0302" (at 172.72 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 172.72 15.24 0)
@@ -1998,7 +1997,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0308") (unit 1)
+          (reference "#PWR0302") (unit 1)
         )
       )
     )
@@ -2007,7 +2006,7 @@
   (symbol (lib_id "power:+3V3") (at 100.33 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ce62fc5-6e0d-4995-b8d1-454f06ddf89c)
-    (property "Reference" "#PWR0303" (at 100.33 24.13 0)
+    (property "Reference" "#PWR0301" (at 100.33 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 100.33 15.24 0)
@@ -2023,7 +2022,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0303") (unit 1)
+          (reference "#PWR0301") (unit 1)
         )
       )
     )
@@ -2032,7 +2031,7 @@
   (symbol (lib_id "power:GND") (at 63.5 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b2b95ed6-2f3e-48be-8ce1-976df1792de2)
-    (property "Reference" "#PWR0301" (at 63.5 90.17 0)
+    (property "Reference" "#PWR0312" (at 63.5 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 88.9 0)
@@ -2048,7 +2047,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0301") (unit 1)
+          (reference "#PWR0312") (unit 1)
         )
       )
     )
@@ -2111,7 +2110,7 @@
   (symbol (lib_id "Device:C") (at 196.85 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd4f5d94-afa6-499b-bd05-758813c08a40)
-    (property "Reference" "C304" (at 200.66 69.215 0)
+    (property "Reference" "C306" (at 200.66 69.215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "300p" (at 200.66 71.755 0)
@@ -2131,7 +2130,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "C304") (unit 1)
+          (reference "C306") (unit 1)
         )
       )
     )
@@ -2204,7 +2203,7 @@
   (symbol (lib_id "power:GND") (at 217.17 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9d9500a-6323-43f1-8445-0cb2b3146f4a)
-    (property "Reference" "#PWR0313" (at 217.17 50.8 0)
+    (property "Reference" "#PWR0309" (at 217.17 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 217.17 49.53 0)
@@ -2220,7 +2219,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0313") (unit 1)
+          (reference "#PWR0309") (unit 1)
         )
       )
     )
@@ -2261,7 +2260,7 @@
   (symbol (lib_id "power:GND") (at 172.72 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec42eb81-f5ed-4830-b486-5bbd2a3a89fa)
-    (property "Reference" "#PWR0309" (at 172.72 39.37 0)
+    (property "Reference" "#PWR0306" (at 172.72 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 38.1 0)
@@ -2277,7 +2276,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0309") (unit 1)
+          (reference "#PWR0306") (unit 1)
         )
       )
     )
@@ -2286,7 +2285,7 @@
   (symbol (lib_id "power:+3V3") (at 138.43 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f24b143d-8373-448d-914a-9510f0663764)
-    (property "Reference" "#PWR0305" (at 138.43 35.56 0)
+    (property "Reference" "#PWR0303" (at 138.43 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 138.43 26.67 0)
@@ -2302,7 +2301,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0305") (unit 1)
+          (reference "#PWR0303") (unit 1)
         )
       )
     )
@@ -2311,7 +2310,7 @@
   (symbol (lib_id "power:GND") (at 208.28 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f6873784-24d5-400d-944a-08193ed2196f)
-    (property "Reference" "#PWR0315" (at 208.28 156.21 0)
+    (property "Reference" "#PWR0314" (at 208.28 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.28 154.94 0)
@@ -2327,7 +2326,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0315") (unit 1)
+          (reference "#PWR0314") (unit 1)
         )
       )
     )
@@ -2368,7 +2367,7 @@
   (symbol (lib_id "power:GND") (at 100.33 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc4a6df4-eb9f-4a69-b394-ca78f1370f0c)
-    (property "Reference" "#PWR0304" (at 100.33 39.37 0)
+    (property "Reference" "#PWR0305" (at 100.33 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 100.33 38.1 0)
@@ -2384,7 +2383,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/30e6da1a-ec42-41f7-ae0a-ea640aeea44d"
-          (reference "#PWR0304") (unit 1)
+          (reference "#PWR0305") (unit 1)
         )
       )
     )

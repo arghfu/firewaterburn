@@ -971,7 +971,6 @@
     )
   )
 
-
   (junction (at 222.25 62.23) (diameter 0) (color 0 0 0 0)
     (uuid 01213f0e-9012-403e-b33f-e6792816e730)
   )
@@ -1650,7 +1649,7 @@
   (symbol (lib_id "power:+3V3") (at 180.34 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 002cc6eb-4936-4e48-ae81-89a7e11a5371)
-    (property "Reference" "#PWR0412" (at 180.34 119.38 0)
+    (property "Reference" "#PWR0415" (at 180.34 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 180.34 111.76 0)
@@ -1666,7 +1665,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0412") (unit 1)
+          (reference "#PWR0415") (unit 1)
         )
       )
     )
@@ -1675,7 +1674,7 @@
   (symbol (lib_id "Device:C") (at 228.6 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04faf625-1bff-4ff0-839b-ae54acd989b1)
-    (property "Reference" "C408" (at 232.41 124.4599 0)
+    (property "Reference" "C410" (at 232.41 124.4599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10µ" (at 232.41 126.9999 0)
@@ -1695,7 +1694,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C408") (unit 1)
+          (reference "C410") (unit 1)
         )
       )
     )
@@ -1704,7 +1703,7 @@
   (symbol (lib_id "power:GND") (at 201.93 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0a4c16e3-9b11-4b4e-ad71-e8c118e537ea)
-    (property "Reference" "#PWR0415" (at 201.93 142.24 0)
+    (property "Reference" "#PWR0420" (at 201.93 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 201.93 139.7 0)
@@ -1720,7 +1719,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0415") (unit 1)
+          (reference "#PWR0420") (unit 1)
         )
       )
     )
@@ -1729,7 +1728,7 @@
   (symbol (lib_id "power:GND") (at 165.1 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1103b835-9015-4379-8692-c6f08b6e4e27)
-    (property "Reference" "#PWR0422" (at 165.1 86.36 0)
+    (property "Reference" "#PWR0408" (at 165.1 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.1 83.82 0)
@@ -1745,7 +1744,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0422") (unit 1)
+          (reference "#PWR0408") (unit 1)
         )
       )
     )
@@ -1754,7 +1753,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 241.3 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1521a89c-4eba-435d-abcf-c6b175f23203)
-    (property "Reference" "TP405" (at 243.84 20.193 0)
+    (property "Reference" "TP401" (at 243.84 20.193 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 243.84 22.733 0)
@@ -1773,7 +1772,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "TP405") (unit 1)
+          (reference "TP401") (unit 1)
         )
       )
     )
@@ -1782,7 +1781,7 @@
   (symbol (lib_id "power:GND") (at 228.6 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17ce448e-7533-4c0f-8ad7-536f8bff6580)
-    (property "Reference" "#PWR0418" (at 228.6 142.24 0)
+    (property "Reference" "#PWR0421" (at 228.6 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 139.7 0)
@@ -1798,7 +1797,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0418") (unit 1)
+          (reference "#PWR0421") (unit 1)
         )
       )
     )
@@ -1836,7 +1835,7 @@
   (symbol (lib_id "Device:C") (at 55.88 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29e14095-9b8f-4875-b47e-b7e396228d42)
-    (property "Reference" "C403" (at 59.69 96.5199 0)
+    (property "Reference" "C407" (at 59.69 96.5199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1µ" (at 59.69 99.0599 0)
@@ -1856,7 +1855,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C403") (unit 1)
+          (reference "C407") (unit 1)
         )
       )
     )
@@ -1894,7 +1893,7 @@
   (symbol (lib_id "mylib_ic:LT3973-3.3") (at 205.74 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 32924a4f-f9e8-4ff7-9a53-2ea3330350c9)
-    (property "Reference" "U403" (at 207.7594 74.93 0)
+    (property "Reference" "U401" (at 207.7594 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LT3973-3.3" (at 207.7594 77.47 0)
@@ -1923,7 +1922,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "U403") (unit 1)
+          (reference "U401") (unit 1)
         )
       )
     )
@@ -1955,7 +1954,7 @@
           (reference "C303") (unit 1)
         )
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C410") (unit 1)
+          (reference "C404") (unit 1)
         )
       )
     )
@@ -1964,7 +1963,7 @@
   (symbol (lib_id "Device:R") (at 119.38 53.34 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b88f3f6-1d3c-4f12-ba73-42fca787c7f7)
-    (property "Reference" "R408" (at 120.65 52.07 0)
+    (property "Reference" "R403" (at 120.65 52.07 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 120.65 54.61 0)
@@ -1984,7 +1983,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R408") (unit 1)
+          (reference "R403") (unit 1)
         )
       )
     )
@@ -2018,7 +2017,7 @@
   (symbol (lib_id "power:VBUS") (at 45.72 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44e3dd3e-2731-4e21-877c-26bfbc1d1b81)
-    (property "Reference" "#PWR0401" (at 45.72 44.45 0)
+    (property "Reference" "#PWR0402" (at 45.72 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 45.72 36.83 0)
@@ -2034,7 +2033,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0401") (unit 1)
+          (reference "#PWR0402") (unit 1)
         )
       )
     )
@@ -2043,7 +2042,7 @@
   (symbol (lib_id "power:GND") (at 184.15 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4507432e-6ae3-4831-8ed6-a39efe3cf2a5)
-    (property "Reference" "#PWR0414" (at 184.15 86.36 0)
+    (property "Reference" "#PWR0409" (at 184.15 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 184.15 83.82 0)
@@ -2059,7 +2058,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0414") (unit 1)
+          (reference "#PWR0409") (unit 1)
         )
       )
     )
@@ -2068,7 +2067,7 @@
   (symbol (lib_id "Device:R") (at 184.15 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4864b065-1d03-4367-87ca-40380166df56)
-    (property "Reference" "R410" (at 186.69 72.3899 0)
+    (property "Reference" "R406" (at 186.69 72.3899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "215k" (at 186.69 74.9299 0)
@@ -2088,7 +2087,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R410") (unit 1)
+          (reference "R406") (unit 1)
         )
       )
     )
@@ -2097,7 +2096,7 @@
   (symbol (lib_id "Device:R") (at 102.87 156.21 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a538f44-3b51-4b78-8ad3-38ee099347b0)
-    (property "Reference" "R406" (at 104.14 154.94 0)
+    (property "Reference" "R410" (at 104.14 154.94 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 104.14 157.48 0)
@@ -2117,7 +2116,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R406") (unit 1)
+          (reference "R410") (unit 1)
         )
       )
     )
@@ -2126,7 +2125,7 @@
   (symbol (lib_id "Device:C") (at 222.25 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4eb31bf3-a46b-486c-8910-e93f23589412)
-    (property "Reference" "C407" (at 226.06 48.26 0)
+    (property "Reference" "C402" (at 226.06 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.47µ" (at 226.06 50.8 0)
@@ -2146,7 +2145,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C407") (unit 1)
+          (reference "C402") (unit 1)
         )
       )
     )
@@ -2155,7 +2154,7 @@
   (symbol (lib_id "power:GND") (at 93.98 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59957923-04a7-402f-92a9-180508097c29)
-    (property "Reference" "#PWR0408" (at 93.98 124.46 0)
+    (property "Reference" "#PWR0417" (at 93.98 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 93.98 121.92 0)
@@ -2171,7 +2170,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0408") (unit 1)
+          (reference "#PWR0417") (unit 1)
         )
       )
     )
@@ -2180,7 +2179,7 @@
   (symbol (lib_id "Device:C") (at 234.95 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6470f248-33ab-44ab-9d24-5d7aaa52570d)
-    (property "Reference" "C409" (at 238.76 69.8499 0)
+    (property "Reference" "C405" (at 238.76 69.8499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22µ" (at 238.76 72.3899 0)
@@ -2200,7 +2199,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C409") (unit 1)
+          (reference "C405") (unit 1)
         )
       )
     )
@@ -2209,7 +2208,7 @@
   (symbol (lib_id "Device:R") (at 90.17 156.21 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 665a52d2-60a3-42d7-83a3-5b773e8dc067)
-    (property "Reference" "R404" (at 91.44 154.94 0)
+    (property "Reference" "R409" (at 91.44 154.94 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 91.44 157.48 0)
@@ -2229,7 +2228,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R404") (unit 1)
+          (reference "R409") (unit 1)
         )
       )
     )
@@ -2238,7 +2237,7 @@
   (symbol (lib_id "power:GND") (at 45.72 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f399c65-4155-4872-a7b6-c3be3e1faf43)
-    (property "Reference" "#PWR0402" (at 45.72 78.74 0)
+    (property "Reference" "#PWR0407" (at 45.72 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 45.72 76.2 0)
@@ -2254,7 +2253,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0402") (unit 1)
+          (reference "#PWR0407") (unit 1)
         )
       )
     )
@@ -2263,7 +2262,7 @@
   (symbol (lib_id "power:GND") (at 55.88 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f3bf4c3-f664-4006-99c1-c1c7f28f42dc)
-    (property "Reference" "#PWR0404" (at 55.88 111.76 0)
+    (property "Reference" "#PWR0413" (at 55.88 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 109.22 0)
@@ -2279,7 +2278,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0404") (unit 1)
+          (reference "#PWR0413") (unit 1)
         )
       )
     )
@@ -2288,7 +2287,7 @@
   (symbol (lib_id "Device:C") (at 218.44 125.73 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 78b09b6c-752d-418d-81c4-058edf434b50)
-    (property "Reference" "C406" (at 222.25 124.4599 0)
+    (property "Reference" "C409" (at 222.25 124.4599 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1µ" (at 222.25 126.9999 0)
@@ -2308,7 +2307,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C406") (unit 1)
+          (reference "C409") (unit 1)
         )
       )
     )
@@ -2317,7 +2316,7 @@
   (symbol (lib_id "power:+3V3") (at 90.17 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7fbe5b4e-b297-41b3-95a0-bfaa7a4d6396)
-    (property "Reference" "#PWR0407" (at 90.17 148.59 0)
+    (property "Reference" "#PWR0422" (at 90.17 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 90.17 140.97 0)
@@ -2333,7 +2332,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0407") (unit 1)
+          (reference "#PWR0422") (unit 1)
         )
       )
     )
@@ -2342,7 +2341,7 @@
   (symbol (lib_id "Device:R") (at 96.52 57.15 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 835b3121-f960-4f8e-9171-30905690f774)
-    (property "Reference" "R405" (at 97.79 55.88 0)
+    (property "Reference" "R404" (at 97.79 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100" (at 97.79 58.42 0)
@@ -2362,7 +2361,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R405") (unit 1)
+          (reference "R404") (unit 1)
         )
       )
     )
@@ -2371,7 +2370,7 @@
   (symbol (lib_id "Device:C") (at 96.52 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83f7c043-8cba-4c8e-8194-bc140f671d0c)
-    (property "Reference" "C404" (at 100.33 46.9899 0)
+    (property "Reference" "C401" (at 100.33 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 100.33 49.5299 0)
@@ -2391,7 +2390,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C404") (unit 1)
+          (reference "C401") (unit 1)
         )
       )
     )
@@ -2400,7 +2399,7 @@
   (symbol (lib_id "power:+3V3") (at 234.95 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8457b65f-0809-4f09-a82e-29b4f64dbbc5)
-    (property "Reference" "#PWR0419" (at 234.95 50.8 0)
+    (property "Reference" "#PWR0405" (at 234.95 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 234.95 43.18 0)
@@ -2416,7 +2415,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0419") (unit 1)
+          (reference "#PWR0405") (unit 1)
         )
       )
     )
@@ -2454,7 +2453,7 @@
   (symbol (lib_id "power:VDD") (at 176.53 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c78db51-24de-481d-9637-ea4e54652528)
-    (property "Reference" "#PWR0411" (at 176.53 50.8 0)
+    (property "Reference" "#PWR0404" (at 176.53 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 176.53 43.18 0)
@@ -2470,7 +2469,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0411") (unit 1)
+          (reference "#PWR0404") (unit 1)
         )
       )
     )
@@ -2508,7 +2507,7 @@
   (symbol (lib_id "Device:R") (at 78.74 53.34 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92e979f4-0d59-4d63-b0c6-8586f7a0b2c7)
-    (property "Reference" "R403" (at 80.01 52.07 0)
+    (property "Reference" "R402" (at 80.01 52.07 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 80.01 54.61 0)
@@ -2528,7 +2527,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R403") (unit 1)
+          (reference "R402") (unit 1)
         )
       )
     )
@@ -2537,13 +2536,13 @@
   (symbol (lib_id "mylib_ic:STUSB4500QTR") (at 93.98 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9eabbeba-46f2-464a-873f-c9f46a6d2a88)
-    (property "Reference" "U401" (at 95.9994 114.935 0)
+    (property "Reference" "U402" (at 95.9994 114.935 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "STUSB4500QTR" (at 95.9994 117.475 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" (at 93.98 91.44 0)
+    (property "Footprint" "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias" (at 93.98 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/stusb4500.pdf" (at 93.98 91.44 0)
@@ -2580,7 +2579,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "U401") (unit 1)
+          (reference "U402") (unit 1)
         )
       )
     )
@@ -2589,7 +2588,7 @@
   (symbol (lib_id "power:GND") (at 119.38 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a369910d-2ede-4b7c-bc29-b686f62edfdf)
-    (property "Reference" "#PWR0410" (at 119.38 129.54 0)
+    (property "Reference" "#PWR0418" (at 119.38 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 127 0)
@@ -2605,7 +2604,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0410") (unit 1)
+          (reference "#PWR0418") (unit 1)
         )
       )
     )
@@ -2614,7 +2613,7 @@
   (symbol (lib_id "power:GND") (at 69.85 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a415c79a-eee1-490c-bbe3-82971ee99d55)
-    (property "Reference" "#PWR0405" (at 69.85 120.65 0)
+    (property "Reference" "#PWR0414" (at 69.85 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 118.11 0)
@@ -2630,7 +2629,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0405") (unit 1)
+          (reference "#PWR0414") (unit 1)
         )
       )
     )
@@ -2639,7 +2638,7 @@
   (symbol (lib_id "power:GND") (at 234.95 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a94b211d-9521-4a81-a4da-6f536246a5c8)
-    (property "Reference" "#PWR0420" (at 234.95 86.36 0)
+    (property "Reference" "#PWR0411" (at 234.95 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 83.82 0)
@@ -2655,7 +2654,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0420") (unit 1)
+          (reference "#PWR0411") (unit 1)
         )
       )
     )
@@ -2664,7 +2663,7 @@
   (symbol (lib_id "Device:C") (at 180.34 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b1600f69-4232-4431-b31c-fbbe05dd117b)
-    (property "Reference" "C405" (at 184.15 124.4599 0)
+    (property "Reference" "C408" (at 184.15 124.4599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10µ" (at 184.15 126.9999 0)
@@ -2684,7 +2683,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C405") (unit 1)
+          (reference "C408") (unit 1)
         )
       )
     )
@@ -2693,7 +2692,7 @@
   (symbol (lib_id "power:GND") (at 180.34 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3edb9e4-0f71-4558-83bb-59717d5f8b6b)
-    (property "Reference" "#PWR0413" (at 180.34 142.24 0)
+    (property "Reference" "#PWR0419" (at 180.34 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 180.34 139.7 0)
@@ -2709,7 +2708,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0413") (unit 1)
+          (reference "#PWR0419") (unit 1)
         )
       )
     )
@@ -2718,7 +2717,7 @@
   (symbol (lib_id "power:GND") (at 241.3 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b6e20383-e06a-4813-b303-fb0ddff78e9d)
-    (property "Reference" "#PWR0421" (at 241.3 35.56 0)
+    (property "Reference" "#PWR0401" (at 241.3 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 241.3 33.02 0)
@@ -2734,7 +2733,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0421") (unit 1)
+          (reference "#PWR0401") (unit 1)
         )
       )
     )
@@ -2771,7 +2770,7 @@
   (symbol (lib_id "power:VDD") (at 119.38 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid be011987-d9d5-4c1f-ad02-2c265db1f096)
-    (property "Reference" "#PWR0409" (at 119.38 44.45 0)
+    (property "Reference" "#PWR0403" (at 119.38 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 119.38 35.56 0)
@@ -2787,7 +2786,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0409") (unit 1)
+          (reference "#PWR0403") (unit 1)
         )
       )
     )
@@ -2796,7 +2795,7 @@
   (symbol (lib_id "Device:R") (at 119.38 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c01d255d-56e2-4063-87c3-9e937fa264f3)
-    (property "Reference" "R409" (at 121.92 114.2999 0)
+    (property "Reference" "R407" (at 121.92 114.2999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 121.92 116.8399 0)
@@ -2816,7 +2815,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R409") (unit 1)
+          (reference "R407") (unit 1)
         )
       )
     )
@@ -2825,7 +2824,7 @@
   (symbol (lib_id "Device:C") (at 45.72 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c3eb86b0-de13-4483-898c-ca66c535f65e)
-    (property "Reference" "C401" (at 49.53 59.6899 0)
+    (property "Reference" "C403" (at 49.53 59.6899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1µ" (at 49.53 62.2299 0)
@@ -2845,7 +2844,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C401") (unit 1)
+          (reference "C403") (unit 1)
         )
       )
     )
@@ -2854,7 +2853,7 @@
   (symbol (lib_id "power:GND") (at 45.72 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c768ad72-cbf3-416f-ac5b-4fc046000fd8)
-    (property "Reference" "#PWR0403" (at 45.72 111.76 0)
+    (property "Reference" "#PWR0412" (at 45.72 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 45.72 109.22 0)
@@ -2870,7 +2869,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0403") (unit 1)
+          (reference "#PWR0412") (unit 1)
         )
       )
     )
@@ -2879,7 +2878,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 31.75 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7dcb6bf-ffc1-47ef-bfe3-e3f203b63c92)
-    (property "Reference" "TP401" (at 34.29 36.703 0)
+    (property "Reference" "TP402" (at 34.29 36.703 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 34.29 39.243 0)
@@ -2898,7 +2897,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "TP401") (unit 1)
+          (reference "TP402") (unit 1)
         )
       )
     )
@@ -2996,7 +2995,7 @@
   (symbol (lib_id "power:+5V") (at 228.6 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d48277f3-232c-43ba-97f8-5c6a7cb1f137)
-    (property "Reference" "#PWR0417" (at 228.6 119.38 0)
+    (property "Reference" "#PWR0416" (at 228.6 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 228.6 111.76 0)
@@ -3012,7 +3011,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0417") (unit 1)
+          (reference "#PWR0416") (unit 1)
         )
       )
     )
@@ -3021,7 +3020,7 @@
   (symbol (lib_id "Device:C") (at 45.72 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d568983c-1049-4e33-9ec4-5c93b77e7f77)
-    (property "Reference" "C402" (at 49.53 96.5199 0)
+    (property "Reference" "C406" (at 49.53 96.5199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1µ" (at 49.53 99.0599 0)
@@ -3041,7 +3040,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "C402") (unit 1)
+          (reference "C406") (unit 1)
         )
       )
     )
@@ -3050,7 +3049,7 @@
   (symbol (lib_id "Device:R") (at 106.68 62.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d94a40dc-13dc-468a-a651-15df399b98f0)
-    (property "Reference" "R407" (at 106.68 59.69 90)
+    (property "Reference" "R405" (at 106.68 59.69 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22k" (at 106.68 64.77 90)
@@ -3070,7 +3069,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R407") (unit 1)
+          (reference "R405") (unit 1)
         )
       )
     )
@@ -3079,7 +3078,7 @@
   (symbol (lib_id "Device:R") (at 77.47 156.21 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbd0f9d8-0241-406d-b90d-b993f112b1eb)
-    (property "Reference" "R402" (at 78.74 154.94 0)
+    (property "Reference" "R408" (at 78.74 154.94 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 78.74 157.48 0)
@@ -3099,7 +3098,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "R402") (unit 1)
+          (reference "R408") (unit 1)
         )
       )
     )
@@ -3108,7 +3107,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 233.68 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ee43ac3a-605c-4a77-86c2-6b5eee40fca9)
-    (property "Reference" "TP403" (at 236.22 111.633 0)
+    (property "Reference" "TP405" (at 236.22 111.633 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 236.22 114.173 0)
@@ -3127,7 +3126,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "TP403") (unit 1)
+          (reference "TP405") (unit 1)
         )
       )
     )
@@ -3136,7 +3135,7 @@
   (symbol (lib_id "Regulator_SwitchedCapacitor:LM2775DSG") (at 201.93 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ee739656-7876-4026-af1b-9dd4a1e5f421)
-    (property "Reference" "U402" (at 203.9494 110.49 0)
+    (property "Reference" "U403" (at 203.9494 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LM2775DSG" (at 203.9494 113.03 0)
@@ -3163,7 +3162,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "U402") (unit 1)
+          (reference "U403") (unit 1)
         )
       )
     )
@@ -3172,7 +3171,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 123.19 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f740a729-b7d2-462b-bb27-77357150a022)
-    (property "Reference" "TP402" (at 125.73 36.703 0)
+    (property "Reference" "TP403" (at 125.73 36.703 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 125.73 39.243 0)
@@ -3191,7 +3190,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "TP402") (unit 1)
+          (reference "TP403") (unit 1)
         )
       )
     )
@@ -3200,7 +3199,7 @@
   (symbol (lib_id "power:GND") (at 205.74 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe239f21-b015-4cf9-b60e-a45d5158a651)
-    (property "Reference" "#PWR0416" (at 205.74 86.36 0)
+    (property "Reference" "#PWR0410" (at 205.74 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 83.82 0)
@@ -3216,7 +3215,7 @@
     (instances
       (project "firewaterburn"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5"
-          (reference "#PWR0416") (unit 1)
+          (reference "#PWR0410") (unit 1)
         )
       )
     )
