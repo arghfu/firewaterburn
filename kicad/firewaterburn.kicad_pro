@@ -35,18 +35,18 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.8,
-          "width": 3.4
+          "height": 3.0,
+          "width": 2.7
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.7999999999999999,
-        "silk_text_size_v": 0.7999999999999999,
+        "silk_text_size_h": 0.6,
+        "silk_text_size_v": 0.6,
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -56,7 +56,14 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|103755055|88800000|1a60779f-4742-414f-a182-d49d6b303749|d7b21849-6167-4f4a-a44d-5d07e0c53479",
+        "clearance|103755055|89300000|d7b21849-6167-4f4a-a44d-5d07e0c53479|0a682e8d-bfe2-4cf7-a37c-f4838b46240f",
+        "clearance|103755055|89800000|0a682e8d-bfe2-4cf7-a37c-f4838b46240f|0952f7b9-2b8c-4ca7-b6e7-d89f8be44927",
+        "clearance|103755055|90300000|0952f7b9-2b8c-4ca7-b6e7-d89f8be44927|2b2a0606-b394-4062-9ab9-0e24a4f74c83",
+        "clearance|113900000|70660000|878d4e58-0787-42ce-b134-17920f353aa2|0ec57874-5506-4efb-9dd0-812648f5835f",
+        "clearance|114050000|69890000|e568bfee-843b-4afd-a326-4165e05fd0d5|73dbd0af-d12b-4f84-8d9e-afa6b2cbf936"
+      ],
       "meta": {
         "version": 2
       },
@@ -92,7 +99,7 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -122,9 +129,9 @@
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
-        "min_text_thickness": 0.08,
+        "min_silk_clearance": 0.09999999999999999,
+        "min_text_height": 0.6,
+        "min_text_thickness": 0.09999999999999999,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.125,
         "min_via_annular_width": 0.09999999999999999,
@@ -139,10 +146,10 @@
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 5,
           "td_on_pad_in_zone": false,
-          "td_onpadsmd": true,
+          "td_onpadsmd": false,
           "td_onroundshapesonly": false,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onviapad": false
         }
       ],
       "teardrop_parameters": [
@@ -476,6 +483,23 @@
       },
       {
         "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.18,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 1.9,
+        "line_style": 0,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
+        "name": "nfc",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.19,
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
@@ -513,6 +537,14 @@
       {
         "netclass": "single_end",
         "pattern": "/pwr_supply/CC2"
+      },
+      {
+        "netclass": "nfc",
+        "pattern": "/mcu_n_tft/NFC+"
+      },
+      {
+        "netclass": "nfc",
+        "pattern": "/mcu_n_tft/NFC-"
       }
     ]
   },
