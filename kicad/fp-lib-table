@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "mylib_connector")(type "KiCad")(uri "C:/workspace/kicad-libs/footprint/mylib_connector.pretty")(options "")(descr ""))
+  (lib (name "mylib_ic")(type "KiCad")(uri "C:/workspace/kicad-libs/footprint/mylib_ic.pretty")(options "")(descr ""))
+)
