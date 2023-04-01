@@ -1,10 +1,9 @@
 kicad/linearize.log
-
 kicad/linearize.raw
-
 kicad/linearize.txt
 
-simulation/.idea/
+**/.idea/
+**/*build*
 
 *.zip
 *.kicad_sch-bak
