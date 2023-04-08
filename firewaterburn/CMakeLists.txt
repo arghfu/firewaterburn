@@ -2,9 +2,15 @@
 
 cmake_minimum_required(VERSION 3.20.0)
 
+set(NO_BUILD_TYPE_WARNING TRUE)
 list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+
 project(firewaterburn)
 
-target_sources(app PRIVATE src/main.c src/peripheral/analog.c)
-target_include_directories(app PUBLIC src)
+add_subdirectory(src/peripheral)
+
+target_sources(app PRIVATE src/main.c)
+#target_include_directories(app PUBLIC
+#        src/application
+#        src/peripheral)

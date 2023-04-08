@@ -29,11 +29,30 @@
 			label = "Red LED 2";
 		};
 	};
+
+    fans {
+        compatible = "pwm-leds";
+
+        fan0: pwm_0 {
+            pwms = <&pwm0 0 PWM_HZ(600) PWM_POLARITY_NORMAL>;
+        };
+    };
+	
+	buttons {
+		compatible = "gpio-keys";
+
+		button0: button_0 {
+			gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
+			label = "Pd Alert";
+		};
+	};
 	
 	aliases {
 		led0 = &led0;
 		led1 = &led1;
 		led2 = &led2;
+		pdalert = &button0;
+        fan = &fan0;
 	};
 
     zephyr,user {
@@ -56,7 +75,7 @@
 };
 
 &i2c0 {
-	compatible = "nordic,nrf-twi";
+	compatible = "nordic,nrf-twim";
 	status = "okay";
 	pinctrl-0 = <&i2c0_default>;
 	pinctrl-1 = <&i2c0_sleep>;
@@ -133,6 +152,13 @@
 			reg = <0xfa000 0x6000>;
 		};
 	};
+};
+
+&pwm0 {
+    status = "okay";
+    pinctrl-0 = <&pwm0_default>;
+    pinctrl-1 = <&pwm0_sleep>;
+    pinctrl-names = "default", "sleep";
 };
 
 zephyr_udc0: &usbd {
