@@ -35,8 +35,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 3.0,
-          "width": 2.7
+          "height": 0.7874,
+          "width": 0.7874
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -57,12 +57,9 @@
         }
       ],
       "drc_exclusions": [
-        "clearance|103755055|88800000|1a60779f-4742-414f-a182-d49d6b303749|d7b21849-6167-4f4a-a44d-5d07e0c53479",
-        "clearance|103755055|89300000|d7b21849-6167-4f4a-a44d-5d07e0c53479|0a682e8d-bfe2-4cf7-a37c-f4838b46240f",
-        "clearance|103755055|89800000|0a682e8d-bfe2-4cf7-a37c-f4838b46240f|0952f7b9-2b8c-4ca7-b6e7-d89f8be44927",
-        "clearance|103755055|90300000|0952f7b9-2b8c-4ca7-b6e7-d89f8be44927|2b2a0606-b394-4062-9ab9-0e24a4f74c83",
-        "clearance|113900000|70660000|878d4e58-0787-42ce-b134-17920f353aa2|0ec57874-5506-4efb-9dd0-812648f5835f",
-        "clearance|114050000|69890000|e568bfee-843b-4afd-a326-4165e05fd0d5|73dbd0af-d12b-4f84-8d9e-afa6b2cbf936"
+        "clearance|109540000|79950000|3ed1bedc-3a39-415b-a415-9ce9167eb8ce|d52feba7-37b2-48f8-bf0c-e6bbe12d05f5",
+        "clearance|110310000|80100000|70ed2c3c-ac46-4b05-a364-8699a5e6cc45|db06b97c-2d9f-4a73-9833-b9a9ad849ce6",
+        "courtyards_overlap|159200001|86750001|d6aeed36-ef94-401c-92af-52b10112f77b|ee7bdff9-92fc-44b2-8d5c-d352c50869ae"
       ],
       "meta": {
         "version": 2
@@ -145,16 +142,16 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 5,
-          "td_on_pad_in_zone": false,
-          "td_onpadsmd": true,
-          "td_onroundshapesonly": false,
+          "td_on_pad_in_zone": true,
+          "td_onpadsmd": false,
+          "td_onroundshapesonly": true,
           "td_ontrackend": false,
-          "td_onviapad": false
+          "td_onviapad": true
         }
       ],
       "teardrop_parameters": [
         {
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 5,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -473,23 +470,6 @@
         "line_style": 0,
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
-        "name": "QSPI",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
-        "via_diameter": 0.6,
-        "via_drill": 0.2,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.125,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.125,
-        "line_style": 0,
-        "microvia_diameter": 0.0,
-        "microvia_drill": 0.0,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -507,8 +487,8 @@
         "line_style": 0,
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
-        "name": "clock",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "name": "analog",
+        "pcb_color": "rgb(255, 24, 33)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.6,
@@ -517,17 +497,17 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.165,
-        "diff_pair_gap": 0.165,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.125,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.23,
+        "diff_pair_width": 0.125,
         "line_style": 0,
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
-        "name": "diff_pair",
-        "pcb_color": "rgb(59, 122, 255)",
+        "name": "clock",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.23,
+        "track_width": 0.15,
         "via_diameter": 0.6,
         "via_drill": 0.2,
         "wire_width": 6
@@ -565,6 +545,57 @@
         "via_diameter": 0.65,
         "via_drill": 0.25,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.125,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.125,
+        "line_style": 0,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
+        "name": "tft",
+        "pcb_color": "rgb(255, 174, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.165,
+        "diff_pair_gap": 0.165,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.23,
+        "line_style": 0,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
+        "name": "usb",
+        "pcb_color": "rgb(166, 47, 255)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.23,
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.125,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.125,
+        "line_style": 0,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
+        "name": "wifi",
+        "pcb_color": "rgb(67, 255, 96)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "via_diameter": 0.6,
+        "via_drill": 0.2,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -580,11 +611,11 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "diff_pair",
+        "netclass": "usb",
         "pattern": "/D+"
       },
       {
-        "netclass": "diff_pair",
+        "netclass": "usb",
         "pattern": "/D-"
       },
       {
@@ -602,6 +633,98 @@
       {
         "netclass": "nfc",
         "pattern": "/mcu_n_tft/NFC-"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_IO0"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_IO1"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_IO2"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_IO3"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_~{CS}"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/QSPI_CLK"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/COEX_STATUS"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/COEX_REQ"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/COEX_GRANT"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/SW_CTRL1"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/IRQ"
+      },
+      {
+        "netclass": "wifi",
+        "pattern": "/mcu/BUCKEN"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe0"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe1"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe2"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe3"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe4"
+      },
+      {
+        "netclass": "analog",
+        "pattern": "/analog/probe5"
+      },
+      {
+        "netclass": "tft",
+        "pattern": "/mcu/TFT_MOSI"
+      },
+      {
+        "netclass": "tft",
+        "pattern": "/mcu/TFT_CLK"
+      },
+      {
+        "netclass": "tft",
+        "pattern": "/mcu/TFT_~{RESET}"
+      },
+      {
+        "netclass": "tft",
+        "pattern": "/mcu/TFT_~{CS}"
+      },
+      {
+        "netclass": "tft",
+        "pattern": "/mcu/TFT_D{slash}C"
       }
     ]
   },
@@ -667,11 +790,11 @@
     ],
     [
       "d6846ea7-7fd6-41fd-b190-936bea2a4eb0",
-      "OUTPUT"
+      "analog"
     ],
     [
       "30e6da1a-ec42-41f7-ae0a-ea640aeea44d",
-      "mcu_n_tft"
+      "mcu"
     ],
     [
       "da8e08cc-b8fa-44d2-9f6f-15fecbf9ecc5",

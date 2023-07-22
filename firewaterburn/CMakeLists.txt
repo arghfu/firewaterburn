@@ -10,7 +10,6 @@ project(firewaterburn)
 
 add_subdirectory(src/peripheral)
 
+target_include_directories(app PUBLIC ${ZEPHYR_BASE}/subsys/net/ip)
+
 target_sources(app PRIVATE src/main.c)
-#target_include_directories(app PUBLIC
-#        src/application
-#        src/peripheral)
