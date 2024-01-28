@@ -13,22 +13,27 @@
 		zephyr,console = &uart0;
 		zephyr,shell-uart = &uart0;
 		zephyr,uart-mcumgr = &uart0;
+		zephyr,bt-mon-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
 		zephyr,ieee802154 = &ieee802154;
-		zephyr,display = &ssd1306;
 	};
 	
-	leds {
+	/*leds {
 		compatible = "gpio-leds";
 		led0: led_0 {
-			gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 			label = "Red LED 0";
 		};
 		led1: led_1 {
-			gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
 			label = "Red LED 1";
+		};
+		led2: led_2 {
+			gpios = <&gpio1 5 GPIO_ACTIVE_HIGH>;
+			label = "Red LED 2";
 		};
 	};
 
@@ -46,7 +51,21 @@
 			label = "Pd Alert";
 		};
 	};
+	
+	zephyr,user {
+        io-channels = <&adc 0>, <&adc 1>, <&adc 2>, <&adc 3>;
+    };
 
+	
+	aliases {
+		led0 = &led0;
+		led1 = &led1;
+		led2 = &led2;
+		pdalert = &button0;
+        fan = &fan0;
+	};
+	*/
+	
 	nrf_radio_coex: nrf7002-coex {
 		status = "okay";
 		compatible = "nordic,nrf700x-coex";
@@ -55,17 +74,6 @@
 		grant-gpios = <&gpio1 1 (GPIO_PULL_DOWN | GPIO_ACTIVE_LOW)>;
 		swctrl1-gpios = <&gpio1 3 GPIO_ACTIVE_HIGH>;
 	};
-	
-	aliases {
-		led0 = &led0;
-		led1 = &led1;
-		pdalert = &button0;
-        fan = &fan0;
-	};
-	
-	zephyr,user {
-        io-channels = <&adc 0>, <&adc 1>, <&adc 2>, <&adc 3>, <&adc 4>, <&adc 5>;
-    };
 };
 
 &uart0 {
@@ -107,30 +115,27 @@
 	};
 };
 
-&spi2 {
+&spi1 {
     status = "okay";
-    compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi2_default>;
 	pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
 
-    cs-gpios = <&gpio0 21 (GPIO_ACTIVE_LOW)>;
-
     ssd1306: ssd1306@0 {
 		compatible = "solomon,ssd1306fb";
 		reg = <0>;
-		spi-max-frequency = <DT_FREQ_M(1)>;
-        width = <128>;
-        height = <64>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;
-        segment-remap;
-        com-invdir;
-        prechargep = <0x22>;
-		data_cmd-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH)>;
-		reset-gpios = <&gpio0 19 (GPIO_ACTIVE_LOW)>;
+		spi-max-frequency = <DT_FREQ_M(8)>;
+		width = <128>;
+		height = <64>;
+		segment-offset = <0>;
+		page-offset = <0>;
+		display-offset = <0>;
+		multiplex-ratio = <63>;
+		segment-remap;
+		/*com-invdir;*/
+		prechargep = <0x22>;
+		data_cmd-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+		reset-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
 	};
 };
 
@@ -139,11 +144,11 @@
 };
 
 
-&i2c1 {
+/*&i2c0 {
 	compatible = "nordic,nrf-twim";
 	status = "okay";
-	pinctrl-0 = <&i2c1_default>;
-	pinctrl-1 = <&i2c1_sleep>;
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
 	pinctrl-names = "default", "sleep";
 };
 
@@ -158,7 +163,7 @@
         zephyr,gain = "ADC_GAIN_1_4";
         zephyr,reference = "ADC_REF_VDD_1_4";
         zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-        zephyr,input-positive = <NRF_SAADC_AIN3>;
+        zephyr,input-positive = <NRF_SAADC_AIN0>;
         zephyr,resolution = <12>;
     };
 
@@ -167,7 +172,7 @@
         zephyr,gain = "ADC_GAIN_1_4";
         zephyr,reference = "ADC_REF_VDD_1_4";
         zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-        zephyr,input-positive = <NRF_SAADC_AIN7>;
+        zephyr,input-positive = <NRF_SAADC_AIN5>;
         zephyr,resolution = <12>;
     };
 
@@ -176,32 +181,14 @@
         zephyr,gain = "ADC_GAIN_1_4";
         zephyr,reference = "ADC_REF_VDD_1_4";
         zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-        zephyr,input-positive = <NRF_SAADC_AIN4>;
+        zephyr,input-positive = <NRF_SAADC_AIN1>;
         zephyr,resolution = <12>;
     };
 
     channel@3 {
         reg = <3>;
-        zephyr,gain = "ADC_GAIN_1_4";
-        zephyr,reference = "ADC_REF_VDD_1_4";
-        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-        zephyr,input-positive = <NRF_SAADC_AIN5>;
-        zephyr,resolution = <12>;
-    };
-	
-	channel@4 {
-        reg = <4>;
-        zephyr,gain = "ADC_GAIN_1_4";
-        zephyr,reference = "ADC_REF_VDD_1_4";
-        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-        zephyr,input-positive = <NRF_SAADC_AIN0>;
-        zephyr,resolution = <12>;
-    };
-	
-	channel@5 {
-        reg = <5>;
-        zephyr,gain = "ADC_GAIN_1_4";
-        zephyr,reference = "ADC_REF_VDD_1_4";
+        zephyr,gain = "ADC_GAIN_1_5";
+        zephyr,reference = "ADC_REF_INTERNAL";
         zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
         zephyr,input-positive = <NRF_SAADC_AIN6>;
         zephyr,resolution = <12>;
@@ -215,6 +202,11 @@
     pinctrl-names = "default", "sleep";
 };
 
+zephyr_udc0: &usbd {
+	compatible = "nordic,nrf-usbd";
+	status = "okay";
+};
+*/
 &flash0 {
 	partitions {
 		compatible = "fixed-partitions";
@@ -244,8 +236,3 @@
 	};
 };
 
-&spi2_default {
-    group1 {
-        nordic,invert;
-    };
-};
