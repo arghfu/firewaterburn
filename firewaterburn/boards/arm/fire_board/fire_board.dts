@@ -114,10 +114,12 @@
 	pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
 
+    cs-gpios = <&gpio0 21 (GPIO_ACTIVE_LOW)>;
+
     ssd1306: ssd1306@0 {
 		compatible = "solomon,ssd1306fb";
 		reg = <0>;
-		spi-max-frequency = <DT_FREQ_M(8)>;
+		spi-max-frequency = <DT_FREQ_M(1)>;
         width = <128>;
         height = <64>;
         segment-offset = <0>;
@@ -127,8 +129,8 @@
         segment-remap;
         com-invdir;
         prechargep = <0x22>;
-		data_cmd-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
-		reset-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
+		data_cmd-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH)>;
+		reset-gpios = <&gpio0 19 (GPIO_ACTIVE_LOW)>;
 	};
 };
 
@@ -139,7 +141,7 @@
 
 &i2c1 {
 	compatible = "nordic,nrf-twim";
-	status = "disabled";
+	status = "okay";
 	pinctrl-0 = <&i2c1_default>;
 	pinctrl-1 = <&i2c1_sleep>;
 	pinctrl-names = "default", "sleep";
@@ -242,3 +244,8 @@
 	};
 };
 
+&spi2_default {
+    group1 {
+        nordic,invert;
+    };
+};

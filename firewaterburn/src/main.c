@@ -60,69 +60,52 @@
 /** @file
  * @brief WiFi scan sample
  */
-
+#include <stdio.h>
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
-#include <zephyr/display/cfb.h>
-#include <stdio.h>
+
+#include "display.h"
+#include "adc_probe.h"
+
+void display_init_data(struct thermo_display *display);
+
 
 int main(void)
 {
-    const struct device *dev;
-    uint16_t rows;
-    uint8_t ppt;
-    uint8_t font_width;
-    uint8_t font_height;
+    struct thermo_display display;
+    struct adc_probe probes[ADC_PROBE_COUNT];
+    double temperature[ADC_PROBE_COUNT] = { 2.0 , 3.0, 5.0, 6.0, 7.0, 123.0};
 
-    dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
-    if (!device_is_ready(dev)) {
-        printf("Device %s not ready\n", dev->name);
-        return 0;
-    }
+    display_init_data(&display);
+    thermo_display_init(&display);
 
-    if (display_set_pixel_format(dev, PIXEL_FORMAT_MONO10) != 0) {
-        printf("Failed to set required pixel format\n");
-        return 0;
-    }
-
-    printf("Initialized %s\n", dev->name);
-
-    if (cfb_framebuffer_init(dev)) {
-        printf("Framebuffer initialization failed!\n");
-        return 0;
-    }
-
-    cfb_framebuffer_clear(dev, true);
-
-    display_blanking_off(dev);
-
-    rows = cfb_get_display_parameter(dev, CFB_DISPLAY_ROWS);
-    ppt = cfb_get_display_parameter(dev, CFB_DISPLAY_PPT);
-
-    for (int idx = 0; idx < 42; idx++) {
-        if (cfb_get_font_size(dev, idx, &font_width, &font_height)) {
-            break;
-        }
-        cfb_framebuffer_set_font(dev, idx);
-        printf("font width %d, font height %d\n",
-               font_width, font_height);
-    }
-
-    printf("x_res %d, y_res %d, ppt %d, rows %d, cols %d\n",
-           cfb_get_display_parameter(dev, CFB_DISPLAY_WIDTH),
-           cfb_get_display_parameter(dev, CFB_DISPLAY_HEIGH),
-           ppt,
-           rows,
-           cfb_get_display_parameter(dev, CFB_DISPLAY_COLS));
+    adc_probe_init(probes);
 
     while (1)
     {
-            cfb_framebuffer_clear(dev, false);
+        adc_probe_read_all(probes);
+        adc_probe_get_value(probes, temperature);
+        thermo_display_update(&display, temperature);
 
-            cfb_print(dev, "123°!\"123°!",0, 0);
-            cfb_framebuffer_finalize(dev);
-
-            k_msleep(100);
+        k_msleep(1000);
     }
-    return 0;
 }
+
+
+
+void display_init_data(struct thermo_display *display)
+{
+    display->layout.rows = 2;
+    display->layout.columns = 3;
+    display->layout.channels = 6;
+    display->layout.spacing = 10;
+    display->layout.header_height = 12;
+
+    display->time.tm_hour = 13;
+    display->time.tm_min = 37;
+
+    display->dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
+    display->signal_strength = WIFI_SIGNAL_STRENGTH_DISCONNECTED;
+    display->time.tm_hour = 13;
+}
+

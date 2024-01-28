@@ -10,7 +10,7 @@
 LOG_MODULE_REGISTER(USB_PD, CONFIG_LOG_DEFAULT_LEVEL);
 
 struct stusb_pd_controller pd_controller = {
-        .i2c_device = DEVICE_DT_GET(DT_NODELABEL(i2c0)),
+        .i2c_device = DEVICE_DT_GET(DT_NODELABEL(i2c1)),
         .pd_alert = GPIO_DT_SPEC_GET_OR(PD_ALERT_NODE, gpios, { 0 }),
         .pdo = {{0},
                 {0},

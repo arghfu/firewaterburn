@@ -1,6 +1,7 @@
 import re
 import keyboard
 import matplotlib.pyplot as plt
+import numpy
 import numpy as np
 
 # __________________________________ 5V
@@ -201,3 +202,11 @@ if __name__ == '__main__':
     # PlotOpvData(temp, Rt, linRange, B, U0, U0)
 
     plt.show()
+
+    # coef = SolveSteinhartHart((133500, 4), (46600, 26), (3000, 103))
+    # temp_inverse = coef[0] + coef[1]*numpy.log(47073.68421) + coef[2]*numpy.log(47073.68421)*numpy.log(47073.68421)*numpy.log(47073.68421)
+    #
+    #
+    # temp = 1/temp_inverse
+    #
+    # print(f"temperature: {temp -273.15}")
