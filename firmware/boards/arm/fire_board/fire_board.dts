@@ -18,8 +18,9 @@
 		zephyr,code-partition = &slot0_partition;
 		zephyr,ieee802154 = &ieee802154;
 		zephyr,display = &ssd1306;
+		zephyr,wifi = &nordic_wlan0;
 	};
-	
+
 	leds {
 		compatible = "gpio-leds";
 		led0: led_0 {
@@ -38,7 +39,7 @@
 			pwms = <&pwm0 0 PWM_HZ(600) PWM_POLARITY_NORMAL>;
 		};
     };
-	
+
 	buttons {
 		compatible = "gpio-keys";
 		button0: button_0 {
@@ -50,19 +51,38 @@
 	nrf_radio_coex: nrf7002-coex {
 		status = "okay";
 		compatible = "nordic,nrf700x-coex";
-		status0-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;  
+		status0-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
 		req-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
 		grant-gpios = <&gpio1 1 (GPIO_PULL_DOWN | GPIO_ACTIVE_LOW)>;
 		swctrl1-gpios = <&gpio1 3 GPIO_ACTIVE_HIGH>;
 	};
-	
+
+	nordic_wlan0: nordic_wlan0 {
+		compatible = "nordic,wlan0";
+		status = "okay";
+	};
+
 	aliases {
 		led0 = &led0;
 		led1 = &led1;
 		pdalert = &button0;
         fan = &fan0;
 	};
-	
+
+	nrf70_tx_power_ceiling: nrf70_tx_power_ceiling_node {
+		status = "okay";
+		compatible = "nordic,nrf700x-tx-power-ceiling";
+		max-pwr-2g-dsss = <0x54>;
+		max-pwr-2g-mcs0 = <0x40>;
+		max-pwr-2g-mcs7 = <0x40>;
+		max-pwr-5g-low-mcs0 = <0x34>;
+		max-pwr-5g-low-mcs7 = <0x34>;
+		max-pwr-5g-mid-mcs0 = <0x34>;
+		max-pwr-5g-mid-mcs7 = <0x34>;
+		max-pwr-5g-high-mcs0 = <0x30>;
+		max-pwr-5g-high-mcs7 = <0x30>;
+	};
+
 	zephyr,user {
         io-channels = <&adc 0>, <&adc 1>, <&adc 2>, <&adc 3>, <&adc 4>, <&adc 5>;
     };
@@ -100,7 +120,7 @@
 		status = "okay";
 		reg = <0>;
 		spi-max-frequency = <DT_FREQ_M(8)>;
-		
+
 		iovdd-ctrl-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 		bucken-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 		host-irq-gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
@@ -188,7 +208,7 @@
         zephyr,input-positive = <NRF_SAADC_AIN5>;
         zephyr,resolution = <12>;
     };
-	
+
 	channel@4 {
         reg = <4>;
         zephyr,gain = "ADC_GAIN_1_4";
@@ -197,7 +217,7 @@
         zephyr,input-positive = <NRF_SAADC_AIN0>;
         zephyr,resolution = <12>;
     };
-	
+
 	channel@5 {
         reg = <5>;
         zephyr,gain = "ADC_GAIN_1_4";
