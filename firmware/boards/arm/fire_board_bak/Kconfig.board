@@ -1,0 +1,10 @@
+# Copyright (c) 2023 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_FIRE_BOARD
+	bool "FireWaterburn Board"
+	depends on SOC_NRF52840_QIAA
+
+config NRF7002_ON_SPI
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_NORDIC_NRF700X_SPI))
+	depends on BOARD_FIRE_BOARD
